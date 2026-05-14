@@ -9,18 +9,16 @@ em {
 
 .project-cards-container {
     margin-top: 50px;
-    height: fit-content;
-    height: -moz-fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    align-items: stretch;
 }
 
 .card {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     color: #1D263B;
-}
-
-.card:not(:last-child) {
-    margin: 0 auto 2em auto;
 }
 
 .card-preview-img {
@@ -28,16 +26,24 @@ em {
     border-radius: 10px 10px 0 0;
     padding: 5px;
     background-color: white;
+    display: block;
 }
 
 .card-info {
     padding: 25px;
     background-color: #FFFFFF;
     border-radius: 0 0 10px 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .has-no-preview .card-info {
     border-radius: 10px;
+}
+
+.project-description {
+    flex: 1;
 }
 
 .title-and-links {
@@ -102,7 +108,6 @@ em {
 
 @media only screen and (min-width: 768px) {
     .project-cards-container {
-        column-count: 2;
-        column-gap: 2em;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
