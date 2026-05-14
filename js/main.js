@@ -18,17 +18,20 @@ function toggleMenu() {
 
 toggle.addEventListener("click", toggleMenu, false);
 
-// Yellow glow behind home image — follows mouse across the page
-const homeGlow = document.querySelector('.home-glow');
-if (homeGlow) {
-    const wrapper = homeGlow.closest('.home-image-wrapper');
+// Yellow solid shadow on home image — shadow appears on the opposite side from the mouse
+const homeImg = document.getElementById('home-img');
+if (homeImg) {
+    const wrapper = homeImg.closest('.home-image-wrapper');
     document.addEventListener('mousemove', (e) => {
         const rect = wrapper.getBoundingClientRect();
         const cx = rect.left + rect.width / 2;
         const cy = rect.top + rect.height / 2;
-        const dx = (e.clientX - cx) / window.innerWidth;
-        const dy = (e.clientY - cy) / window.innerHeight;
-        homeGlow.style.transform = `translate(calc(-50% + ${dx * 50}px), calc(-50% + ${dy * 50}px))`;
+        const dx = Math.max(-1.5, Math.min(1.5, (e.clientX - cx) / (rect.width / 2)));
+        const dy = Math.max(-1.5, Math.min(1.5, (e.clientY - cy) / (rect.height / 2)));
+        // Shadow sits opposite the mouse — mouse top-left → shadow bottom-right
+        const ox = -dx * 18;
+        const oy = -dy * 18;
+        homeImg.style.filter = `drop-shadow(${ox}px ${oy}px 0px #FADA7A)`;
     });
 }
 

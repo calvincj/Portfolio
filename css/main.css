@@ -21,7 +21,7 @@
 .about-wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
     gap: -5rem;
 }
