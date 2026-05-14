@@ -142,11 +142,11 @@ section .hyperlink:hover {
     flex: 1;
 }
 
-.about-link {
+.intro .hyperlink {
     color: #8ab4f8;
 }
 
-.about-link:hover {
+.intro .hyperlink:hover {
     color: #FADA7A;
 }
 
