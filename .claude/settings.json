@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:calvincj.github.io)",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('/Users/calvin/Desktop/Year_3/Spring Quarter/Portfolio/img/igcc-preview.png'\\); print\\(img.size\\)\")"
+    ]
+  }
+}
