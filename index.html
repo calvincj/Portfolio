@@ -13,7 +13,7 @@
         <meta property="og:url" content="http://calvinc.xyz" />
         <meta property="og:description" content="Hi! I'm Calvin." />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content="home-image.png" />
+        <meta property="og:image" content="home-image2.png" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="copyright" content="Calvin Chen">
@@ -51,45 +51,49 @@
 
         <main class="main-container home-section">
             <section id="home">
-                    <div class="landing-wrapper">
-                        <div class="landing-page-details">
-                            <h1 class="small-title">Hi!</h1>
-                            <h2 class="big-title">I'm <span class="my-name yellow">Calvin</span></h2>
-                            <h3 class="medium-title">
-                                <em>Political Science and Data Science Student at
-                                    <a class="yellow" href="https://ucsd.edu/">UCSD</a>
-                                </em>
-                            </h3>
-                        </div>
+                <div class="landing-wrapper">
+                    <div class="landing-page-details">
+                        <h1 class="small-title">Hi!</h1>
+                        <h2 class="big-title">I'm <span class="my-name yellow">Calvin</span></h2>
+                        <h3 class="medium-title">
+                            <em>Political Science and Data Science Student at
+                                <a class="yellow" href="https://ucsd.edu/">UCSD</a>
+                            </em>
+                        </h3>
                     </div>
+                </div>
                 <div class="photo-me">
-                    <img src="./img/home-image.png" />
+                    <div class="home-image-wrapper">
+                        <div class="home-glow"></div>
+                        <img src="./img/home-image2.png" id="home-img" />
+                    </div>
                 </div>
             </section>
 
             <br><br><br>
-                <section id="profile">
-                    <div class="about-wrapper">
-                        <div class="profile">
-                            <img src="./img/about-image.png" alt="Photo of me on my grandpa's shoulder">
-                        </div>
-                        <div class="intro">
-                            <br><br><br><br><br>
-                            <h2 class="left-align"><span class="yellow">About Me</span></h2>
-                            <p>I'm interested in studying global political strategy, particularly how nations navigate conflict and deterrence. That interest was first sparked by reading The Three-Body Problem as a kid—a classic Chinese sci-fi novel about the struggle between humans and an alien civilization. Its "dark forest" theory of deterrence, where survival hinges on credible threats and strategic restraint, fascinated me and pushed me to explore how such logic plays out in the real-world. </p>
-                            <br>
-                            <p>Growing up between China and the United States, I became especially drawn to the complex dynamics of U.S.-China competition. Today, I focus on how states use economic coercion and technology rivalry to shape global power structures, applying computational methods to study these strategies within the broader field of international political economy.</p>
-                        </div>
+            <section id="profile">
+                <div class="about-wrapper">
+                    <div class="profile">
+                        <img src="./img/about-image.png" alt="Photo of me on my grandpa's shoulder" id="about-img">
                     </div>
-                    <br><br><br><br><br>
-                </section>
+                    <div class="intro">
+                        <br><br><br><br><br>
+                        <h2 class="left-align"><span class="yellow">About Me</span></h2>
+                        <p>I'm interested in studying global political strategy, particularly how nations navigate conflict and deterrence. That interest was first sparked by reading The Three-Body Problem as a kid—a classic Chinese sci-fi novel about the struggle between humans and an alien civilization. Its "dark forest" theory of deterrence, where survival hinges on credible threats and strategic restraint, fascinated me and pushed me to explore how such logic plays out in the real-world.</p>
+                        <br>
+                        <p>Growing up between China and the United States, I became especially drawn to the complex dynamics of U.S.-China competition. Today, I focus on how states use economic coercion and technology rivalry to shape global power structures, applying computational methods to study these strategies within the broader field of international political economy.</p>
+                        <br>
+                        <p>Beyond geopolitics, I'm also drawn to the economics of clean energy and supply chain resilience—particularly critical minerals. These resources sit at the intersection of the energy transition and great-power competition, and I'm interested in how their control and trade shape both industrial policy and geopolitical alignment.</p>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+            </section>
 
-
-        <section class="projects" id="select-projects">
-                <h2><span class="yellow">Research Projects</span></h2>
+            <section class="projects" id="select-projects">
+                <h2><span class="yellow">Research on China</span></h2>
                 <p class="section-description">
-                    I'm striving to become a researcher focused on international <br>
-                    political economy and the geopolitics of emerging technologies.
+                    I study how China's political economy shapes global competition—through economic coercion,
+                    technology rivalry, and the strategic use of critical resources.
                 </p>
                 <div class="project-cards-container">
                     <div class="card">
@@ -98,7 +102,7 @@
                         <div class="card-info">
                             <div class="title-and-links">
                                 <span class="project-title">
-                                    Mapping of China’s Innovation System
+                                    Mapping of China's Innovation System
                                 </span>
                                 <div class="project-links">
                                     <a href="https://portals.igcc.sdsc.edu/" target="_blank">
@@ -113,8 +117,59 @@
                             <p class="project-description">
                                 Under
                                 <a href="https://ucigcc.org/people/tai-ming-cheung/" class="hyperlink" target="_blank">Prof. Tai Ming Cheung</a> at
-                                <a class="hyperlink" href="https://ucigcc.org/" target="_blank">IGCC</a>.
-                                , I helped develop a SQL-based database mapping over 2,500 Chinese research institutions involved in the IDAR (Introduction, Digestion, Assimilation, Re-Innovation) system. I used OpenAI's API for translation and cleaning and prepared 15+ variables for visualization in a project funded by the U.S. Department of State.
+                                <a class="hyperlink" href="https://ucigcc.org/" target="_blank">IGCC</a>,
+                                I helped develop a SQL-based database mapping over 2,500 Chinese research institutions involved in the IDAR (Introduction, Digestion, Assimilation, Re-Innovation) system. I used OpenAI's API for translation and cleaning and prepared 15+ variables for visualization in a project funded by the U.S. Department of State.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/DecodeBeijing.png"
+                            alt="Decode Beijing Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Decode Beijing
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://decode-beijing.vercel.app" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/calvincj/DecodeBeijing" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>Python</span>
+                                <span>TypeScript</span>
+                                <span>FastAPI</span>
+                                <span>Next.js</span>
+                            </div>
+                            <p class="project-description">
+                                A political language analysis tool that systematically tracks terminology shifts in Chinese government documents—Five-Year Plans, Work Reports, and Party Congresses. Users can monitor term frequency trends, identify policy priorities by numbered task ranking, and review AI-generated contextual summaries of rhetorical changes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card has-no-preview">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Critical Minerals Tracker
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://calvincj.github.io/critical_minerals_tracker/" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/calvincj/critical_minerals_tracker" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>JavaScript</span>
+                            </div>
+                            <p class="project-description">
+                                An interactive dashboard tracking recent and historic trade deals and investments in critical minerals. Draws on IEA Critical Minerals Policy data to surface patterns in global supply chain activity and geopolitical competition over strategic resources.
                             </p>
                         </div>
                     </div>
@@ -138,12 +193,41 @@
                         </div>
                     </div>
                     <div class="card">
+                        <img src="./img/film-preview.png"
+                            alt="Project Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    The Chinese Film Industry &amp; Hollywood
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://drive.google.com/file/d/1C6Manj6xOvUlikb_D0IAZ5adYnLAPAHU/view?usp=sharing" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                In a 22 page top 5% paper in the Pioneer Academics program, I argued for a new perspective on how Chinese film history reflects shifting CCP governance strategies. Supervised by
+                                <a href="https://www.sps.nyu.edu/content/sps-nyu/faculty-directory/1880-chyng-feng-sun.html" class="hyperlink" target="_blank">Prof. Chyng F. Sun</a>, I analyzed how party ideology and global market forces reconfigured the power dynamic between domestic film producers and Hollywood.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="other-research">
+                <h2><span class="yellow">Other Research</span></h2>
+                <p class="section-description">
+                    Additional projects spanning data science, political analysis, and collaborative work.
+                </p>
+                <div class="project-cards-container">
+                    <div class="card">
                         <img src="./img/pln-preview.png"
                             alt="Project Preview Screenshot" class="card-preview-img">
                         <div class="card-info">
                             <div class="title-and-links">
                                 <span class="project-title">
-                                    Political Acitivty in U.S. State Prisons
+                                    Political Activity in U.S. State Prisons
                                 </span>
                                 <div class="project-links">
                                     <a href="https://drive.google.com/file/d/1eFmypK_ZGJOujLnj7BVpwDRKKay39Qjl/view?usp=sharing" target="_blank">
@@ -161,23 +245,84 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="./img/film-preview.png"
-                            alt="Project Preview Screenshot" class="card-preview-img">
+                    <div class="card has-no-preview">
                         <div class="card-info">
                             <div class="title-and-links">
                                 <span class="project-title">
-                                    The Chinese Film Industry & Hollywood
+                                    CMIP6 Temperature Anomaly Visualization
                                 </span>
                                 <div class="project-links">
-                                    <a href="https://drive.google.com/file/d/1C6Manj6xOvUlikb_D0IAZ5adYnLAPAHU/view?usp=sharing" target="_blank">
+                                    <a href="https://jaerinx.github.io/cmip6-d3/" target="_blank">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
                             </div>
+                            <div class="project-skills">
+                                <span>JavaScript</span>
+                                <span>D3.js</span>
+                            </div>
                             <p class="project-description">
-                                In a 22 page top 5% paper in the Pioneer Academics program, I argued for a new perspective on how Chinese film history reflects shifting CCP governance strategies. Supervised by
-                                <a href="https://www.sps.nyu.edu/content/sps-nyu/faculty-directory/1880-chyng-feng-sun.html" class="hyperlink" target="_blank">Prof. Chyng F. Sun</a>, I analyzed how party ideology and global market forces reconfigured the power dynamic between domestic film producers and Hollywood.
+                                A group project for DSC 106 (Data Visualization). We built an interactive D3.js visualization of global temperature anomalies using CMIP6 climate model data, letting users explore how surface temperatures have shifted over time across different regions and emissions scenarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="personal-projects">
+                <h2><span class="yellow">Personal Projects</span></h2>
+                <p class="section-description">
+                    Side projects built for fun and to sharpen new skills.
+                </p>
+                <div class="project-cards-container">
+                    <div class="card">
+                        <img src="./img/RapidFire.png"
+                            alt="RapidFire Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    RapidFire
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://github.com/calvincj/RapidFire" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>TypeScript</span>
+                                <span>Next.js</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <p class="project-description">
+                                A personal AI-curated news dashboard that fires daily summaries across nine categories—tech, finance, politics, AI, and more. Headlines are fetched from NewsAPI and processed through Groq's Llama 3.3 70B for categorization and summarization. Includes a calendar view for browsing historical digests.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/Politicle.png"
+                            alt="Politicle Preview Screenshot" class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Politicle
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://politicle.online" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/calvincj/Politicle" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>TypeScript</span>
+                                <span>Vite</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <p class="project-description">
+                                A Wordle-inspired political guessing game where players identify a hidden country using political and economic clues—Liberal Democracy Index, GDP per capita, and population. Guess on an interactive world map and use directional feedback to zero in on the target.
                             </p>
                         </div>
                     </div>
@@ -187,8 +332,8 @@
 
         <footer class="footer-container">
             <div class="footer">
-                    <span class="copyright"><i class="fa-regular fa-copyright"></i> Calvin Chen
-                        2025</span>
+                <span class="copyright"><i class="fa-regular fa-copyright"></i> Calvin Chen
+                    2025</span>
             </div>
         </footer>
         <script src="./js/main.js"></script>
