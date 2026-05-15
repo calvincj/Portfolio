@@ -77,11 +77,11 @@ em {
     color: #3674B5;
     font-size: 1.2em;
     transition: all 0.2s ease;
+    display: inline-block;
 }
 
 .project-links a i:hover {
-    font-size: 1.25em;
-    padding: 2px 5px;
+    transform: scale(1.1);
     color: #FADA7A;
 }
 
